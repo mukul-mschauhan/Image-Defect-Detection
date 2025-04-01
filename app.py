@@ -40,15 +40,7 @@ Recommendations: What should be done immediately to address or further investiga
 Repair Strategy: Detailed step-by-step repair methodology suitable for this defect.
 
 Only give answers based on what is visible in the image. Do not speculate beyond visual evidence. Be concise but thorough. Use civil engineering terminology and best practices.
-Try to write the answer covering the following points:
-sections = {
-        "Defect": "",
-        "Type of Defect": "",
-        "Observed Defects": "",
-        "Possible Causes": "",
-        "Recommendations": "",
-        "Repair Strategy": ""
-    }
+Try to write the answer covering the following points:"Defect": "","Type of Defect": "","Observed Defects": "","Possible Causes": "","Recommendations": "","Repair Strategy": ""
 
 Image (base64 encoded): {image_data}
 """
