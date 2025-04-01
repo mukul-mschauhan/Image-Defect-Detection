@@ -7,6 +7,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 import textwrap
+from io import BytesIO
 
 load_dotenv()
 OPENAI_KEY = os.getenv("OPENAI_KEY")
