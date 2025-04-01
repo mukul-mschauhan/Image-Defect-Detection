@@ -14,11 +14,15 @@ client = OpenAI(api_key=OPENAI_KEY)
 
 #openai.api_key = OPENAI_KEY
 
+import base64
+
 def encode_image(image):
-    buffered = io.BytesIO()
+    if image.mode != "RGB":
+        image = image.convert("RGB")
+    
+    buffered = BytesIO()
     image.save(buffered, format="JPEG")
-    img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
-    return img_str
+    return base64.b64encode(buffered.getvalue()).decode()
 
 # Prompt Template
 PROMPT_TEMPLATE = """
